@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
-import Header from './HeaderComponent';
-import Footer from './FooterComponent';
 import { BIOS } from '../shared/bios';
-import { Card, CardImg, CardImgOverlay, CardTitle, Breadcrumb, BreadcrumbItem } from 'reactstrap';
+import { Card, CardImg, CardImgOverlay, CardTitle,} from 'reactstrap';
 
 
 class Home extends Component {
@@ -37,15 +35,11 @@ class Home extends Component {
         });
 
         return (
-            <div>
-                <Header />
                 <div className="container">                   
                     <div className="row">                      
                         {directory}
                     </div>
                 </div>
-                <Footer />
-            </div>
         );
     }
 }
